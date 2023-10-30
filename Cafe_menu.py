@@ -22,13 +22,24 @@ price = {
     'Apple pie': 3.2
 }
 
+# Calculate the value of each item by multiplying its price with its stock quantity
+latte = price['Latte'] * stock['Latte']
+espresso = price['Espresso'] * stock['Espresso']
+cake = price['Cake'] * stock['Cake']
+tea = price['Tea'] * stock['Tea']
+brownie = price['Brownie'] * stock['Brownie']
+apple_pie = price['Apple pie'] * stock['Apple pie']
+
 # Iterate through each item in the 'menu' and calculate the value of each item by multiplying stock by price
 total_stock = 0
 for item in menu:
     item_value = stock[item] * price[item]
     total_stock += item_value 
-    
+
+# Print the total stock price   
 print (f"Total stock price:\n ${total_stock}") 
+# Print the price of each item in stock
+print (f"Price of each item in stock:\n Latte: ${latte}\n Esperesso: ${espresso}\n Cake: ${cake}\n Tea: ${tea}\n Brownie: ${brownie}\n Apple Pie: ${apple_pie}")
 
     
   
